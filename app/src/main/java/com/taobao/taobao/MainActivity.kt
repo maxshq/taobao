@@ -31,10 +31,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         Toast.makeText(this, "載入速度取決於當前網絡狀態", Toast.LENGTH_SHORT).show()
-        webView = findViewById(R.id.taobao) as WebView
+        webView = findViewById<WebView>(R.id.taobao)
 
         if (intent.data != null){
-            val intent = getIntent()
+            val intent = intent
             val uri :Uri =intent.data
             if (uri !=null){
                 val url:String=uri.toString()
@@ -47,11 +47,11 @@ class MainActivity : AppCompatActivity() {
 
         webView!!.settings.javaScriptEnabled = true
         webView!!.canGoBack()
-        webView!!.setWebViewClient(object : WebViewClient() {
+        webView!!.webViewClient = object : WebViewClient() {
             override fun onReceivedSslError(view: WebView, handler: SslErrorHandler, error: SslError) {
                 handler.proceed()
             }
-        })
+        }
 
 //        webView!!.setWebViewClient(NewWebViewClient())
 
@@ -68,7 +68,7 @@ class MainActivity : AppCompatActivity() {
 //        webView!!.settings.loadsImagesAutomatically=true
         webView!!.settings.domStorageEnabled=true
 
-        refreshLayout = findViewById(R.id.refresh) as SwipeRefreshLayout
+        refreshLayout = findViewById<SwipeRefreshLayout>(R.id.refresh)
         refreshLayout!!.setOnRefreshListener {
             Handler().postDelayed({
                 webView!!.reload()

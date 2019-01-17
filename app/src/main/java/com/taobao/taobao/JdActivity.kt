@@ -28,7 +28,7 @@ class JdActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         Toast.makeText(this, "載入速度取決於當前網絡狀態", Toast.LENGTH_SHORT).show()
-        webView = findViewById(R.id.taobao) as WebView
+        webView = findViewById<WebView>(R.id.taobao)
 
 //        if (intent.data != null){
 //            val intent = getIntent()
@@ -46,14 +46,14 @@ class JdActivity : AppCompatActivity() {
         webView!!.settings.domStorageEnabled = true
 
         webView!!.canGoBack()
-        webView!!.setWebViewClient(object : WebViewClient() {
+        webView!!.webViewClient = object : WebViewClient() {
             override fun onReceivedSslError(view: WebView, handler: SslErrorHandler, error: SslError) {
                 handler.proceed()
             }
-        })
+        }
         //        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
 //        webView!!.settings.userAgentString="AliApp(TB/4.9.2)"
-        refreshLayout = findViewById(R.id.refresh) as SwipeRefreshLayout
+        refreshLayout = findViewById<SwipeRefreshLayout>(R.id.refresh)
         refreshLayout!!.setOnRefreshListener {
             Handler().postDelayed({
                 webView!!.reload()
