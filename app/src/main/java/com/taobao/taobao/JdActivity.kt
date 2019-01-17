@@ -30,17 +30,17 @@ class JdActivity : AppCompatActivity() {
         Toast.makeText(this, "載入速度取決於當前網絡狀態", Toast.LENGTH_SHORT).show()
         webView = findViewById(R.id.taobao) as WebView
 
-        if (intent.data != null){
-            val intent = getIntent()
-            val uri :Uri =intent.data
-            if (uri !=null){
-                val url :String =uri.getQueryParameter("h5Url")
-                Log.i("??", url)
-                webView!!.loadUrl(url)
-            }
-        }else{
+//        if (intent.data != null){
+//            val intent = getIntent()
+//            val uri :Uri =intent.data
+//            if (uri !=null){
+//                val url :String =uri.getQueryParameter("h5Url")
+//                Log.i("??", url)
+//                webView!!.loadUrl(url)
+//            }
+//        }else{
             webView!!.loadUrl("https://m.jd.com")
-        }
+//        }
 
         webView!!.settings.javaScriptEnabled = true
         webView!!.settings.domStorageEnabled = true
