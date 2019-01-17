@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--<android.support.design.widget.FloatingActionButton-->
+    <!--android:id="@+id/floatingActionButton"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:clickable="true"-->
+    <!--app:elevation="@dimen/fab_margin"-->
+    <!--app:layout_constraintBottom_toTopOf="parent"-->
+    <!--app:layout_constraintRight_toLeftOf="parent"-->
+    <!--android:layout_marginRight="@dimen/fab_margin"-->
+    <!--android:layout_marginBottom="@dimen/fab_margin_bootm"-->
+    <!--app:srcCompat="@drawable/ic_menu_share"-->
+    <!--android:focusable="true"/>-->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/taobao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </WebView>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</android.support.constraint.ConstraintLayout>
