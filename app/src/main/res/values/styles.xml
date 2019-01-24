@@ -11,6 +11,24 @@
         <item name="android:navigationBarColor">@color/navigationBarColor</item>
     </style>
 
+    <style name="TppTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/navigationBarColor</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="android:navigationBarDividerColor" tools:targetApi="o_mr1">
+            @color/navigationBarDividerColor
+        </item>
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+    </style>
 
-
+    <style name="JdTheme" parent="Theme.AppCompat.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:statusBarColor">@color/jdColor</item>
+        <item name="android:windowLightNavigationBar" tools:targetApi="o_mr1">true</item>
+        <item name="android:navigationBarDividerColor" tools:targetApi="o_mr1">
+            @color/navigationBarDividerColor
+        </item>
+        <item name="android:navigationBarColor">@color/navigationBarColor</item>
+    </style>
 </resources>

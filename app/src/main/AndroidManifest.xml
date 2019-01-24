@@ -3,6 +3,8 @@
     package="com.taobao.taobao">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:usesCleartextTraffic="true"
@@ -37,26 +39,34 @@
 
 
         </activity>
-        <activity android:name=".JdActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+        <activity
+            android:name=".JdActivity"
+            android:theme="@style/JdTheme"
+            android:label="@string/jd_name"
+            android:icon="@drawable/ic_jd">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
                 <!-- BROWSABLE指定该Activity能被浏览器安全调用 -->
                 <category android:name="android.intent.category.BROWSABLE" />
                 <!-- 声明自定义scheme，类似于http, https -->
-                <data android:scheme="tbopen" />
+
             </intent-filter>
         </activity>
-        <activity android:name=".TppActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.VIEW" />
 
-                <category android:name="android.intent.category.DEFAULT" />
+
+        <activity
+            android:name=".TppActivity"
+            android:theme="@style/TppTheme"
+            android:label="@string/tpp_name"
+            android:icon="@drawable/ic_movie">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
                 <!-- BROWSABLE指定该Activity能被浏览器安全调用 -->
                 <category android:name="android.intent.category.BROWSABLE" />
                 <!-- 声明自定义scheme，类似于http, https -->
-                <data android:scheme="tbopen" />
             </intent-filter>
         </activity>
 

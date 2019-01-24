@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity() {
 //        })
 
         //        getWindow().addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-        webView!!.settings.userAgentString="Mozilla/5.0 (Linux; Google; Android 8.1.0; zh-CN; Nexus 6 Build/HonorH30-L01) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 UCBrowser/11.8.8.968 UWS/2.13.1.10 Mobile Safari/537.36 AliApp(TB/7.7.3)"
+        webView!!.settings.userAgentString = "Mozilla/5.0 (Linux; Google; Android 9.0; zh-CN; Nexus 6 Build) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/71.0.3578.98 /2.13.1.10 Mobile Safari/537.36 AliApp(TB/7.7.3)"
 
         webView!!.settings.setAppCacheEnabled(true)
 //        webView!!.settings.blockNetworkImage=true

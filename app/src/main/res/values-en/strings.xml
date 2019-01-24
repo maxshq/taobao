@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Taobao</string>
+    <string name="static_shortcut_long_label_1">Taobao</string>
+    <string name="static_shortcut_short_label_1">Taobao</string>
+    <string name="static_shortcut_long_label_2">JD</string>
+    <string name="static_shortcut_short_label_2">JD</string>
+    <string name="static_shortcut_long_label_3">Movies</string>
+    <string name="static_shortcut_short_label_3">Movies</string>
+    <string name="jd_name">JD</string>
+    <string name="tpp_name">Movies</string>
+</resources>

@@ -33,9 +33,10 @@ public class TppActivity extends AppCompatActivity {
         webView.getSettings().setJavaScriptEnabled(true);
         webView.canGoBack();
         webView.setWebViewClient(new WebViewClient());
-        webView.getSettings().setUserAgentString("Mozilla/5.0 (Linux; Google; Android 8.1.0; zh-CN; Nexus 6 Build/HonorH30-L01) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 UCBrowser/11.8.8.968 UWS/2.13.1.10 Mobile Safari/537.36 AliApp(TB/7.7.3)");
+//        webView.getSettings().setUserAgentString("Mozilla/5.0 (Linux; Google; Android 8.1.0; zh-CN; Nexus 6 Build/HonorH30-L01) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/65.0.3325.109 UCBrowser/11.8.8.968 UWS/2.13.1.10 Mobile Safari/537.36 AliApp(TB/7.7.3)");
         webView.getSettings().setGeolocationEnabled(true);
-
+        webView.getSettings().setJavaScriptCanOpenWindowsAutomatically(true);
+//        TppActivity.this.getWindow().setStatusBarColor(getResources().getColor(R.color.navigationBarDividerColor));
         webView.getSettings().setDomStorageEnabled(true);
 
         webView.requestFocusFromTouch();

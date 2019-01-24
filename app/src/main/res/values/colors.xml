@@ -5,4 +5,5 @@
     <color name="colorAccent">#5f646e</color>
     <color name="navigationBarDividerColor">#e3e3e3</color>
     <color name="navigationBarColor">#fff</color>
+    <color name="jdColor">#D01B25</color>
 </resources>
