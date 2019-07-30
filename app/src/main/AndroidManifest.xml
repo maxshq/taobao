@@ -45,14 +45,6 @@
             android:theme="@style/JdTheme"
             android:label="@string/jd_name"
             android:icon="@drawable/ic_jd">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-                <!-- BROWSABLE指定该Activity能被浏览器安全调用 -->
-                <category android:name="android.intent.category.BROWSABLE" />
-                <!-- 声明自定义scheme，类似于http, https -->
-
-            </intent-filter>
         </activity>
 
 
@@ -61,13 +53,6 @@
             android:theme="@style/TppTheme"
             android:label="@string/tpp_name"
             android:icon="@drawable/ic_movie">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-                <!-- BROWSABLE指定该Activity能被浏览器安全调用 -->
-                <category android:name="android.intent.category.BROWSABLE" />
-                <!-- 声明自定义scheme，类似于http, https -->
-            </intent-filter>
         </activity>
 
         <!--<service android:name=".Service.MyFireBaseInstanceIDService">-->
